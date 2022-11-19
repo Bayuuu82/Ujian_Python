@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>about</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}" />
+</head>
+
+<body>
+    <img id="banner" src="{% static 'about/img/about.png' %}" alt="" />
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/matkul">Mata Kuliah</a></li>
+            <li><a href="/mahasiswa">Mahasiswa</a></li>
+        </ul>
+    </div>
+
+    <div class="container w-80">
+        <br>
+        <h1>Anggota Kelompok Jago</h1>
+        <br>
+
+        <div class="row justify-content-around">
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'about/img/bayu.jpeg' %}" class="card-img-top foto_card" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Bayu Fajrin</h5>
+                        <p class="card-subtitle text-muted">Nim: 19.01.013.077</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'about/img/helmi.jpeg' %}" class="card-img-top foto_card" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Maulana Helmi Akbar</h5>
+                        <p class="card-subtitle text-muted">Nim: 19.01.013.099</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'about/img/arif.jpeg' %}" class="card-img-top foto_card" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Arif sutrianto</h5>
+                        <p class="card-subtitle text-muted">Nim: 19.01.013.0795</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'about/img/ega.jpeg' %}" class="card-img-top foto_card" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Yandiega Pragasta</h5>
+                        <p class="card-subtitle text-muted">Nim: 19.01.013.059</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'about/img/edi.jpeg' %}" class="card-img-top foto_card" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Edi cahyadi</h5>
+                        <p class="card-subtitle text-muted">Nim: 19.01.013.088</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-light">Kelompok Jago 2022</span>
+            <span class="bayu">By.fn</span>
+        </div>
+    </footer>
+
+
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascript"></script>
+</body>
+
+</html>

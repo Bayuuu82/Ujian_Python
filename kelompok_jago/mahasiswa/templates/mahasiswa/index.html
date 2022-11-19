@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>about</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}" />
+  </head>
+
+  <body>
+    <img id="banner" src="{% static 'about/img/mhs.png' %}" alt="" />
+    <div id="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/matkul">Mata Kuliah</a></li>
+        <li><a href="/mahasiswa">Mahasiswa</a></li>
+      </ul>
+    </div>
+
+    <div class="container w-80">
+      <br />
+      <h1>Mahasiswa</h1>
+      <!-- ISI KONTEN TAMU -->
+      <div class="container">
+        <form method="post">
+          {% csrf_token %}
+          <table>
+            {{Listmhs.as_table}}
+          </table>
+          <button class="btn btn-success" type="submit">Simpan</button>
+        </form>
+      </div>
+      <br />
+      <!-- END ISI KONTEN TAMU -->
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-light">Kelompok Jago 2022</span>
+        <span class="bayu">By.fn</span>
+      </div>
+    </footer>
+
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascript"></script>
+  </body>
+</html>

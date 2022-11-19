@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Jago</title>
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}" />
+</head>
+
+<body>
+    <img id="banner" src="{% static 'img/home.png' %}" alt="" />
+    <!-- navbar -->
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/matkul">Mata Kuliah</a></li>
+            <li><a href="/mahasiswa">Mahasiswa</a></li>
+        </ul>
+    </div>
+    <!-- end navbar -->
+    <br>
+    <div class="container">
+        <h1 class="display-4">Pemprograman Python</h1>
+        <p class="lead">Python merupakan bahasa pemrograman interpretatif yang dapat digunakan di berbagai platform
+            dengan filosofi perancangan
+            yang berfokus pada tingkat keterbacaan kode dan merupakan salah satu bahasa populer yang berkaitan
+            dengan
+            Data Science,
+            Machine Learning, dan Internet of Things (IoT). Keunggulan Python yang bersifat interpretatif juga
+            banyak
+            digunakan untuk prototyping, scripting dalam pengelolaan infrastruktur, hingga pembuatan website
+            berskala
+            besar
+            . </p>
+        <hr class="my-4">
+
+        <h1 class="display-6">Jadi, Kenapa Python?</h1>
+        <ol class="lead">
+            <li>Bahasa Python menjadi keharusan untuk Anda yang ingin mempelajari dasar-dasar scripting dan pengolahan
+                data atau
+                machine learning.</li>
+            <li>Bahasa Python digunakan secara luas, masuk dalam 3 besar bahasa pemrograman yang digunakan
+                dalam beberapa tahun belakangan.</li>
+            <li>Pustaka (Library) yang luas, memungkinkan Anda mengembangkan ke bidang-bidang lainnya.
+                Beberapa
+                library atau
+                framework terpopuler data science dan machine learning menggunakan Python antara lain: Scikit-Learn,
+                TensorFlow,
+                PyTorch.</li>
+            <li>Bahasa Python memiliki kurva pembelajaran (learning-curve) yang sangat landai, cocok untuk
+                dipelajari
+                sebagai bahasa
+                pemrograman pertama - dengan kemudahan pembacaan dan kemudahan mempelajari sintaksisnya.</li>
+        </ol>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-light">Kelompok Jago 2022</span>
+            <span class="bayu">By.fn</span>
+        </div>
+    </footer>
+
+    <!-- js bootstrap  -->
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascript"></script>
+    <!-- end js bootstrap  -->
+</body>
+
+</html>
